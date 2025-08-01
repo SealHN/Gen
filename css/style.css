@@ -86,3 +86,26 @@ body {
   width: 100px;
   height: 100px;
   }
+/* 添加平滑过渡 */
+.player, .daikon {
+  transition: all 0.2s ease-out;
+}
+
+/* 香蕉样式 */
+.banana {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transition: bottom 0.05s linear;
+}
+
+/* 投掷动画 */
+@keyframes throw {
+  0% { transform: translateX(0) rotate(0deg); }
+  50% { transform: translateX(-10px) rotate(-20deg); }
+  100% { transform: translateX(0) rotate(0deg); }
+}
+
+.throw-animation {
+  animation: throw 0.3s ease-out;
+}
