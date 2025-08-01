@@ -1,0 +1,88 @@
+/* 通用样式 */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.container, .game-container, .victory-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 背景设置 */
+.main-bg { background: url('../assets/a.png') center/cover; }
+.game-bg { background: url('../assets/b.png') center/cover; }
+.victory-bg { background: url('../assets/d.png') center/cover; }
+
+/* 按钮样式 */
+.start-btn {
+  padding: 15px 30px;
+  font-size: 2em;
+  background: #FF6B6B;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.sound-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* 游戏元素 */
+.daikon {
+  position: absolute;
+  right: 50px;
+  width: 100px;
+  height: 150px;
+  background: url('../assets/c.png') center/contain no-repeat;
+}
+
+.player {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 120px;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+
+.score {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+/* 香蕉艺术 */
+.banana-art {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  }
