@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🍌香蕉投手🥕</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="main-bg">
+  <audio loop src="assets/a.ogg" id="bgm"></audio>
+  
+  <div class="container">
+    <button id="startBtn" class="start-btn">START GAME!</button>
+    <button id="soundBtn" class="sound-btn">🔊</button>
+    <div id="bananaArt" class="banana-art"></div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script>
+    document.getElementById('startBtn').onclick = () => {
+      window.location.href = 'game.html';
+    };
+    
+    const bgm = document.getElementById('bgm');
+    document.getElementById('soundBtn').onclick = () => {
+      bgm.paused ? bgm.play() : bgm.pause();
+    };
+    
+    // 首页显示香蕉SVG
+    document.getElementById('bananaArt').innerHTML = drawBanana();
+  </script>
+</body>
+</html>
